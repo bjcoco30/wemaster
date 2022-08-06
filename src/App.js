@@ -1,8 +1,6 @@
 import {StyledContainer} from "./components/Styles"; 
-import Login from "./pages/Login"; 
-import Landing from "./pages/Landing";
-import Video from "./pages/Video";
-import video from "./assets/nature2.mp4";
+import Login from "./pages/Login";  
+import video from "./assets/video-02.mp4";
 import{
   BrowserRouter as Router,
   Routes,
@@ -30,9 +28,7 @@ function App() {
           alignItems: "center",
         }}>
         <Routes> 
-          <Route path="/login/" element={<Login/>} /> 
-          <Route path="/video/" element={<Video/>} />  
-          <Route path="/" element={<Landing/>} />  
+          <Route path="/" element={<Login/>} />    
         </Routes>
         </div>
      </div>
